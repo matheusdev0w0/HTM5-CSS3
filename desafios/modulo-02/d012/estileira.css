@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
 header {
     height: 150px;
     background-color: black;
@@ -10,11 +14,38 @@ header {
 }
 header h1 {
     text-align: center;
+    padding-top: 50px;
+    font-variant: small-caps;
 
 }
 header p {
     text-align: center;
-    margin-top: 35px;
+    padding-bottom: 50px;
+}
+header a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+.normal {
+    background-color: white;
+}
+.imagem {
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+.imagem > p {
+    background-color: black;
+    width: 400px;
 }
 footer {
     height: 120px;
