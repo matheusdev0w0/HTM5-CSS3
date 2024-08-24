@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulário</title>
 </head>
 <body>
-    <h1> Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get">
 
-        <p>
-            <label for="inum">nota</label>
-            <input type="range" id="inum" name="num" max="10" min="0"  value="5"  oninput="ival.InnerHTML = Number(inum.value)">
-            <output id="ival">5</output>
-        </p>
+    <h1 id="titulo"> descubra que ano você nasceu</h1>
 
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+    <section id="caixa1">
+        <br>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="iano">Que ano você nasceu?</label>
+                <br>
+                <input type="number" name="ano" id="iano" oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="iidade">Sua idade é :</label>
+                <output id="iidade">0</output>
+            </p>
+                <script>
+                    function calcIdade () {
+                        let atual = new Date().getFullYear()
+                        iidade.innerHTML = Number(atual) - Number(iano.value)
+                    }
+                </script>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </section>
+    <section id="caixa2">
+        <h1>Sobre Nós:</h1>
+        <p>Bem-vindo à NexusCode, onde transformamos visões em realidade digital por meio de nossas habilidades excepcionais em desenvolvimento front-end. Nós acreditamos que cada pixel conta, e nosso compromisso é criar experiências online envolventes e visualmente deslumbrantes.
         </p>
-    </form>
+        <p>Fundada por um grupo de entusiastas apaixonados por design e tecnologia, NexusCode nasceu da convicção de que a interseção entre criatividade e codificação é onde a verdadeira magia acontece. A nossa equipe é composta por profissionais dedicados, cada um especializado em seu próprio campo, unidos por uma visão comum de elevar a estética e a funcionalidade da web.</p>
+    </section>
 </body>
 </html>
