@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    
+}
+body {
+    background: rgb(166, 123, 206) url(../estilos/pexels-danny-meneses-340146-943096.jpg) right center no-repeat fixed;
+    background-size: cover;
+}
+header {
+    background-color: rgba(33, 92, 218, 0.76);
+    padding: 10px;
+}
+header > h1 {
+    text-align: center;
+}
+header  ul  li {
+    display: inline-block;
+    margin: left;
+    padding: 5px;
+    background-color: rgba(0, 47, 255, 0.726);
+    border-radius: 20px;
+    color: rgb(197, 212, 231);
+    border: 2px solid rgba(30, 240, 255, 0.671);
+}
+header ul li:hover {
+    background-color: rgb(49, 179, 179);
+    transition: 0.2s;
+    padding: 7px;
+}
+main article {
+    margin-top: 100px;
+    padding: 15px;
+    width: 800px;
+    display: block;
+    margin: auto;
+    background-color: rgba(169, 187, 235, 0.521);
+
+}
