@@ -94,7 +94,7 @@
   }
   
   /* Grandes Telas (monitores grandes e dispositivos com alta resolução) */
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
 
     body{
             background-image: url(../imagens/back-tv.jpg);
