@@ -1,0 +1,119 @@
+/* Todas demais Miídias*/
+7
+/*Typical Device Breackpoints*/
+
+/* Pequenas Telas (como dispositivos pequenos e alguns celulares) */
+/* Até 480px */
+
+/* Celulares (smartphones padrão) */
+/* Entre 481px e 767px */
+
+/* Tablets (telas de tamanhos médios) */
+/* Entre 768px e 1024px */
+
+/* Desktop (monitores de tamanho padrão) */
+/* Entre 1025px e 1440px */
+
+/* Grandes Telas (monitores grandes e dispositivos com alta resolução) */
+/* Acima de 1441px */
+
+
+@media print /* Impressao*/ {
+    
+
+
+
+
+}
+  
+  
+  @media screen and (min-width: 68px) and (max-width: 1024px) {
+    
+        /* Tablets (telas de tamanhos médios) */
+
+        body {
+            background-image: url(../imagens/back-tablet.jpg);
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+            padding: 35px;
+        }
+        h2 {
+            margin-top: 5vh;
+            padding: 35px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+        }
+
+        img#phone{display: none;}
+        img#tablet{display: block;}
+        img#print{display: none;}
+        img#pc{display: none;}
+        img#tv{display: none;}
+
+
+  }
+  
+  /* Desktop (monitores de tamanho padrão) */
+  @media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+        padding: 35px;
+    }
+    h2 {
+        margin-top: 5vh;
+        padding: 35px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+
+
+
+  }
+  
+  /* Grandes Telas (monitores grandes e dispositivos com alta resolução) */
+  @media screen and (min-width: 1200px) {
+
+    body{
+            background-image: url(../imagens/back-tv.jpg);
+    }
+
+    h1{
+        font-size: 50px;
+    }
+    h2 {
+        margin-top: 5vh;
+        font-size: 50px;
+
+    }
+
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+
+  }
