@@ -1,0 +1,30 @@
+header {
+    background-color: aliceblue;
+    height: 180px;
+}
+#burguer {
+    display: none;
+}
+
+menu {
+    margin-top: 70px;
+    display: block;
+    position: absolute;
+    margin-left: 5px;
+}
+menu > ul > li {
+    display: inline-block;
+    list-style: none;
+} 
+menu > ul > li > a {
+    padding: 10px;
+    color: white;
+    background-color: gray;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+} 
