@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
+        }
+        div.item {
+
+            background-color: rgb(176, 123, 226);
+            
+            flex-basis: 400px;
+            height: 500px;
+            margin: 10px;
+
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        div.item:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item ">A</div>
+        <div class="item">B</div>
+    </div>
+</body>
+</html>
